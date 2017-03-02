@@ -12,7 +12,7 @@ def permutations(perm, position, string):
         res = requests.get(url)
         exists = json.loads(res.text)['exists']
 
-        if not json.loads(res.text)['exists']:
+        if not exists:
             print(username + ' is AVAILABLE')
             with open('available.txt', 'a') as file:
                 file.write(username + '\n')
