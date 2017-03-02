@@ -14,7 +14,7 @@ def permutations(perm, position, string):
 
         if not exists:
             print(username + ' is AVAILABLE')
-            with open('available.txt', 'a') as file:
+            with open('gitlab.txt', 'a') as file:
                 file.write(username + '\n')
         else:
             print(username + ' is unavailable')
